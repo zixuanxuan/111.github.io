@@ -32,6 +32,7 @@ $(function () {
       "transform": "translateY(0)",
       "transition": "transform 1s"
     })
+    $(".body-pic").show();
     setTimeout(function () {
       $(".body-pic").css({
           "transform": "rotateY(0deg)",
