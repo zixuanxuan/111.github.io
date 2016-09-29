@@ -1,7 +1,7 @@
 $(function () {
 
   // 人体图旋转
-  $(".head, .arms, .chest, .belly, .perineum, .body-all, .legs").click(function () {
+  $(".body-img").click(function () {
       console.log($(this).attr("class"));
       $(".body-pic").css({
           "transform": "rotateY(90deg)",
