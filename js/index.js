@@ -19,6 +19,31 @@ $(function () {
           "transition": "transform 1s"
         })
       },2000)
+      setTimeout(function () {
+        $(".body-pic").hide();
+      },3000)
+  })
+
+
+
+  // 返回人体图
+  $(".last-btn").click(function () {
+    $(".next-wapper").css({
+      "transform": "translateY(0)",
+      "transition": "transform 1s"
+    })
+    setTimeout(function () {
+      $(".body-pic").css({
+          "transform": "rotateY(0deg)",
+          "transition": "transform 1s"
+      })
+    },2000);
+    setTimeout(function () {
+      $(".body-symptom").css({
+          "transform": "rotateY(270deg)",
+          "transition": "transform 1s"
+      })
+    },1000)
   })
 
   // 人体图切换
@@ -95,25 +120,7 @@ $(function () {
 
 
 
-  // 返回人体图
-  $(".last-btn").click(function () {
-    $(".next-wapper").css({
-      "transform": "translateY(0)",
-      "transition": "transform 1s"
-    })
-    setTimeout(function () {
-      $(".body-pic").css({
-          "transform": "rotateY(0deg)",
-          "transition": "transform 1s"
-      })
-    },2000);
-    setTimeout(function () {
-      $(".body-symptom").css({
-          "transform": "rotateY(270deg)",
-          "transition": "transform 1s"
-      })
-    },1000)
-  })
+
 var percent = 20;
   // 预诊结果百分比
   if (percent<20) {
