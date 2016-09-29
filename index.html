@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <!-- <meta content="width=device-width, width=640, user-scalable=no maximun-scale=1.0, user-scalable=no" name="viewport"> -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        <meta content="yes" name="apple-mobile-web-app-capable">
+        <meta content="black" name="apple-mobile-web-app-status-bar-style">
+        <meta content="telephone=no" name="format-detection">
+        <meta content="email=no" name="format-detection">
+        <link rel="stylesheet" href="css/reset.css" media="screen" title="no title">
+        <link rel="stylesheet" href="css/index.css" media="screen" title="no title">
+        <title>选择主要症状</title>
+    </head>
+    <body>
+        <header>
+            <input type="text" name="name" placeholder="输入症状查询,如咳嗽、发热、感冒、白细胞">
+            <span>帮助</span>
+        </header>
+        <section class="body-pic">
+          <div class="beforehand-left">
+            <ul>
+              <li>
+                <span class="man choose choose-active">男</span>
+                <span class="woman choose">女</span>
+              </li>
+              <li>年龄:<input class="age" type="number" placeholder="30">
+              </li>
+              <li>
+                <span class="acute">急性</span>
+                <span class="chronic choose-active">慢性</span>
+              </li>
+            </ul>
+          </div>
+          <div class="body-wapper">
+              <div class="body">
+                <img src="images/peopleMan@2x.png" alt="" />
+                <div class="body-head head"></div>
+                <div class="body-arms arms"></div>
+                <div class="body-chest chest"></div>
+                <div class="body-belly belly"></div>
+                <div class="body-perineum perineum"></div>
+                <div class="body-body-all body-all"></div>
+                <div class="body-legs legs"></div>
+              </div>
+          </div>
+          <div class="beforehand-right">
+              <ul>
+                <li class="head">
+                  <img src="images/toujing.png" alt="" />
+                  <p>头颈部</p>
+                </li>
+                <li class="arms">
+                  <img src="images/sizhi.png" alt="" />
+                  <p>四肢</p>
+                </li>
+                <li class="chest">
+                  <img src="images/xiongbu.png" alt="" />
+                  <p>胸部</p>
+                </li>
+                <li class="belly">
+                  <img src="images/fubu.png" alt="" />
+                  <p>腹部</p>
+                </li>
+                <li class="perineum">
+                  <img src="images/huiyinbu.png" alt="" />
+                  <p>会阴部</p>
+                </li>
+                <li class="body-all">
+                  <img src="images/quanshen.png" alt="" />
+                  <p>全身</p>
+                </li>
+              </ul>
+          </div>
+        </section>
+        <section class="body-symptom">
+          <div class="symptom-top">
+              <span class="last-btn"><人体图</span>
+              <img src="" alt="" />
+              <span>全身</span>
+          </div>
+          <div class="symptomState">
+              <span>肥胖</span>
+              <span>体重减轻</span>
+              <span>消瘦</span>
+              <span>腰痛</span>
+              <span>浮肿</span>
+              <span>淋巴结肿</span>
+              <span>畏寒</span>
+              <span>休克</span>
+              <span>肥胖</span>
+              <span>体重减轻</span>
+              <span>消瘦</span>
+              <span>腰痛</span>
+              <span>浮肿</span>
+              <span>淋巴结肿</span>
+              <span>畏寒</span>
+              <span>休克</span>
+          </div>
+        </section>
+        <div class="next-wapper">
+            <p class="symptom-choose">已选中<span>0</span>项</p>
+            <ul class="symptom">
+            </ul>
+            <p class="next">
+              <span class="next-btn">下一步</span>
+            </p>
+        </div>
+    </body>
+    <script src="js/jquery-2.2.3.js" charset="utf-8"></script>
+    <script src="js/index.js" charset="utf-8"></script>
+    <script type="text/javascript" src="js/calcRootFontSize.js"></script>
+<html>

@@ -1,0 +1,230 @@
+body {
+  font-size: 14px;
+}
+header {
+  width: 100%;
+  padding: 0.2rem;
+  background: rgb(228, 245, 254);
+}
+header input {
+    width: 5.8rem;
+    height: 0.7rem;
+    padding-left: 0.2rem;
+    display: inline-block;
+    background: rgb(189, 226, 244);
+    font-size: 14px;
+    border: none;
+    border-radius: 4px;
+    margin: auto;
+}
+header span {
+    margin-left: 0.2rem;
+    color: #36bac8;
+}
+section {
+    padding-top: 20px;
+}
+.body-pic {
+  width: 100%;
+  height: 7.68rem;
+  /*background: red;*/
+}
+
+.beforehand-left, .beforehand-right {
+    width: 1.65rem;
+}
+.age {
+    display: inline-block;
+    width: 0.45rem;
+    border: 1px solid #36bac8;
+    color: #36bac8;
+    border-radius: 6px;
+}
+.body-wapper {
+    width: 3.85rem;
+}
+.body {
+    width: 2.5rem;
+    margin: auto;
+    border: 1px solid blue;
+    position: relative;
+}
+.body-head {
+    width: 1.3rem;
+    height: 1.45rem;
+    border: 1px solid #000;
+    position: absolute;
+    left: 0.54rem;
+    top: 0;
+}
+.body-chest {
+    width: 1.3rem;
+    height: 1rem;
+    border: 1px solid #000;
+    position: absolute;
+    top: 1.45rem;
+    left: 0.54rem;
+}
+.body-belly {
+    width: 1.3rem;
+    height: 1rem;
+    border: 1px solid #000;
+    position: absolute;
+    top: 2.45rem;
+    left: 0.56rem;
+}
+.body-perineum {
+    width: 1.3rem;
+    height: 0.9rem;
+    border: 1px solid #000;
+    position: absolute;
+    top: 3.45rem;
+    left: 0.56rem;
+}
+.body-arms {
+    width: 2.43rem;
+    height: 3.3rem;
+    border: 1px solid green;
+    position: absolute;
+    left: 0;
+    top: 1.45rem;
+}
+.body-legs {
+    width: 1.3rem;
+    height: 3.5rem;
+    position: absolute;
+    top: 4.35rem;
+    left: 0.56rem;
+    border: 1px solid green;
+}
+.body img {
+    width: 100%;
+}
+.beforehand-left, .body-wapper, .beforehand-right {
+    float: left;
+    /*border: 1px solid red;*/
+}
+.beforehand-left {
+    text-align: center;
+    margin-left: 0.2rem;
+}
+.beforehand-left li:nth-child(even) {
+    margin: 0.3rem 0;
+}
+.beforehand-left li:nth-child(odd) {
+  width: 1.42rem;
+  height: 0.55rem;
+  border: 1px solid #36bac8;
+  line-height: 0.55rem;
+  margin-left: 0.2rem;
+  border-radius: 10px;
+  overflow: hidden;
+  font-size: 0.12rem;
+}
+.beforehand-left li:nth-child(odd) span {
+    display: inline-block;
+    width: 0.68rem;
+    height: 0.6rem;
+    /*margin-top: -0.1rem;*/
+    color: #36bac8;
+    /*font-size: 0.12rem;*/
+}
+.choose-active {
+    background: #36bac8;
+    color: #fff !important;
+}
+.beforehand-right {
+    text-align: center;
+}
+.beforehand-right li {
+    margin-bottom: 0.3rem;
+    color: #36bac8;
+}
+.beforehand-right img {
+    width: 0.5rem;
+}
+.next {
+    text-align: center;
+    padding: 0.3rem;
+    margin-top: 0.3rem;
+}
+.symptom-choose {
+    padding-bottom: 0.2rem;
+    border-bottom: 1px solid #ccc;
+}
+.symptom {
+    margin-top: 0.2rem;
+    display: inline-block;
+}
+.symptom li {
+    display: inline-block;
+    position: relative;
+    margin-bottom: 0.2rem;
+    margin-left: 0.2rem;
+}
+.symptom span {
+    display: inline-block;
+    padding: 0.1rem;
+    border-radius: 8px;
+    background: orange;
+    color: #fff;
+}
+.symptom li i {
+    border: 1px solid red;
+    border-radius: 50%;
+    display: inline-block;
+    width: 0.25rem;
+    height: 0.25rem;
+    color: #fff;
+    background: red;
+    text-align: center;
+    line-height: 0.25rem;
+    position: absolute;
+    right: -0.1rem;
+    top: -0.05rem;
+}
+.next-wapper {
+    padding: 0 0.2rem;
+    margin-top: 0.5rem;
+}
+.next-btn {
+    display: inline-block;
+    width: 1.2rem;
+    height: 1.2rem;
+    line-height: 1.2rem;
+    color: #fff;
+    text-align: center;
+    border-radius: 50%;
+    background: #36bac8;
+}
+.body-symptom {
+    /*background: hotpink;*/
+    position: absolute;
+    left: 0;
+    top: 1.12rem;
+    /*z-index: -1;*/
+    transform: rotateY(270deg);
+    padding: 0.2rem;
+}
+.last-btn {
+    border: 1px solid orange;
+    color: orange;
+    padding: 0.1rem;
+    border-radius: 8px;
+}
+.symptom-top {
+    margin: 0.3rem 0;
+}
+.symptomState span {
+    padding: 0.1rem;
+    display: inline-block;
+    color: #36bac8;
+    border: 1px solid #36bac8;
+    border-radius: 10px;
+    margin-bottom: 0.2rem;
+    margin-left: 0.1rem;
+}
+.symptom-active {
+    background: #36bac8;
+    color: #fff !important;
+}

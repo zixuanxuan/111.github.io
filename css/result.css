@@ -1,0 +1,201 @@
+body {
+  font-size: 0.25rem;
+}
+header {
+  width: 100%;
+  height: 1.5rem;
+  background: rgb(228, 245, 254);
+  line-height: 1rem;
+  text-align: center;
+}
+.main {
+    width: 6.4rem;
+    position: absolute;
+    left: 0;
+    top: 1rem;
+    background: #fff;
+    padding: 0.6rem;
+    line-height: 0.8rem;
+    border-radius: 4rem 4rem 0 0/ 0.5rem 0.5rem 0 0;
+}
+.main li:nth-last-child(2) {
+    border-bottom: 0;
+}
+.main li {
+    border-bottom: 0.5px solid #ccc;
+    position: relative;
+}
+
+.main li img {
+    width: 0.5rem;
+    position: absolute;
+    top: 0.15rem;
+    right: 0.5rem;
+}
+.main li i {
+    position: absolute;
+    right: 0;
+    width: 0.4rem;
+    height: 0.4rem;
+    top: 0.3rem;
+    background: url("../images/arrow_right.png") no-repeat center;
+    background-size: 100% 100%;
+}
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background: rgb(189, 226, 244);
+    padding: 0.1rem;
+    line-height: 0.5rem;
+    text-align: center;
+}
+footer p {
+    color: #fff;
+    background: #36bac8;
+    display: inline-block;
+    border-radius: 1rem;
+    font-size: 12px;
+    padding: 0 0.3rem;
+    margin-top: 0.1rem;
+}
+footer span {
+    display: inline-block;
+    border: 1px solid #36bac8;
+    padding: 0 0.15rem;
+    border-radius: 6px;
+    margin-left: 0.1rem;
+}
+.assess-active {
+    color: #fff;
+    background: #36bac8;
+}
+.assess p {
+    text-align: center;
+    width: 4rem;
+    padding: 0.4rem;
+    position: absolute;
+    left: 1.2rem;
+    top: 4rem;
+    background: #36bac8;
+    border-radius: 6px;
+    animation: assess 3s;
+}
+@keyframes assess {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+/*诊断分析页面*/
+.symptom-top {
+    width: 100%;
+    padding: 0.15rem;
+    background: #36bac8;
+    color: #fff;
+    position: fixed;
+    z-index: 100;
+    left: 0;
+    top: 0;
+}
+.symptom-top img {
+  width: 0.5rem;
+    float: left;
+}
+.symptom-top h4, .symptom-top h5 {
+    width: 2.5rem;
+    margin-left: 2.5rem;
+    text-align: center;
+    line-height: 0.4rem;
+}
+.symptom-top h4 {
+    font-size: 15px;
+}
+.symptom-list {
+    width: 1.7rem;
+    /*height: 100%;*/
+    display: inline-block;
+    float: left;
+    margin-top: 1rem;
+    overflow: scroll;
+}
+.symptom-list li {
+    text-align: center;
+    line-height: 0.8rem;
+    padding-left: 0.1rem;
+}
+.symptom-list li span {
+    display: inline-block;
+    width: 100%;
+    border-bottom: 1px solid #ccc;
+}
+.symptom-content {
+    box-sizing: border-box;
+    /*padding: 0.2rem;*/
+    width: 5.8rem;
+    height: 100%;
+    float: right;
+    background: #f1f1f1;
+    margin-top: 1rem;
+    overflow: scroll;
+}
+.symptom-title {
+    margin: 0.2rem 0.5rem;
+    border: 1px solid red;
+    background: #f1f1f1;
+    position: fixed;
+    padding: 0.2rem 1rem;
+    left: 1.2rem;
+    top: 0.9rem;
+    box-sizing: border-box;
+}
+.symptom-title p {
+    width: 4rem;
+    color: #36bac8;
+    text-align: center;
+    border-style: none none double none;
+    padding-bottom: 0.2rem;
+}
+.symptom-main {
+    margin-top: 1rem;
+}
+.symptom-content .mark {
+    color: #36bac8;
+    width: 3rem;
+    text-align: center;
+    margin: 0.5rem auto;
+    line-height: 0.4rem;
+}
+.symptom-content p span {
+    color: #36bac8;
+}
+.symptom-wapper {
+    width: 7.5rem;
+    height: 13.3rem;
+    overflow: hidden;
+}
+.symptomt-active {
+    background: #36bac8;
+}
+.symptom-content-list li {
+    width: 5.6rem;
+    line-height: 0.7rem;
+    padding-left: 0.2rem;
+    position: relative;
+}
+.symptom-content-list li i {
+    position: absolute;
+    right: 0;
+    width: 0.4rem;
+    height: 0.4rem;
+    top: 0.15rem;
+    background: url("../images/arrow_right.png") no-repeat right;
+    background-size: 100% 100%;
+}
+.symptom-content-list-active {
+    background: #cbcbcb;
+}
