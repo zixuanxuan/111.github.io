@@ -90,6 +90,8 @@ $(function () {
   $(".next-btn").click(function () {
     if (count == 0) {
       alert("请选择症状")
+    } else {
+       window.location.href="symptom.html";
     }
   })
 
