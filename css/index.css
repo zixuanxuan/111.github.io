@@ -22,13 +22,25 @@ header span {
     color: #36bac8;
 }
 section {
-    padding-top: 20px;
+    /*padding-top: 20px;*/
 }
 .body-pic {
   width: 100%;
   height: 7.68rem;
-}
+  /*padding-top: 0.2rem;*/
+  position: relative;
 
+}
+.beforehand-left {
+    position: absolute;
+    left: 0;
+    top: 0.4rem;
+}
+.beforehand-right {
+  position: absolute;
+  right: 0;
+  top: 0.4rem;
+}
 .beforehand-left, .beforehand-right {
     width: 1.65rem;
 }
@@ -43,6 +55,9 @@ section {
 }
 .body-wapper {
     width: 3.85rem;
+    position: absolute;
+    left: 1.7rem;
+    top: 0.4rem;
 }
 .body {
     width: 2.5rem;
@@ -102,7 +117,7 @@ section {
     width: 100%;
 }
 .beforehand-left, .body-wapper, .beforehand-right {
-    float: left;
+    /*float: left;*/
     /*border: 1px solid red;*/
 }
 .beforehand-left {
