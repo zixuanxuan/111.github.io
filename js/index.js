@@ -3,9 +3,10 @@ $(function () {
           pagination: '.swiper-pagination',
           effect: 'flip',
           grabCursor: true,
-          nextButton: '.swiper-button-next',
-          prevButton: '.swiper-button-prev'
+          nextButton: '.body-img',
+          prevButton: '.last-btn'
       });
+
 
 
 
@@ -31,29 +32,24 @@ $(function () {
     $(".chronic").addClass("choose-active");
   });
 
-  // // 人体图旋转
-  // $(".body-img").click(function () {
-  //     console.log($(this).attr("class"));
-  //     $(".body-pic").css({
-  //         "transform": "rotateY(90deg)",
-  //         "transition": "transform 1s"
-  //     })
-  //     setTimeout(function () {
-  //       // $(".body-pic").hide();
-  //       $(".body-symptom").css({
-  //           "transform": "rotateY(360deg)",
-  //           "transition": "transform 1s"
-  //       })
-  //       $(".beforehand-right").hide();
-  //       // $(".beforehand-left").hide();
-  //     },1000);
-  //     setTimeout(function () {
-  //       $(".next-wapper").css({
-  //         "transform": "translateY(-5rem)",
-  //         "transition": "transform 1s"
-  //       })
-  //     },2000)
-  // })
+  // 人体图旋转
+  // var symptomHeight = $(".body-symptom").height();
+  // console.log(symptomHeight);
+  $(".body-img").click(function () {
+      console.log($(this).attr("id"));
+      setTimeout(function () {
+        $(".next-wapper").css({
+            "transform": "translateY(-5rem)",
+            "transition": "transform 1s"
+          })
+      },500)
+  })
+  $(".last-btn").click(function () {
+    $(".next-wapper").css({
+        "transform": "translateY(0rem)",
+        "transition": "transform 1s"
+      })
+  })
 
 
 
@@ -112,29 +108,29 @@ $(function () {
   })
 
 
-
-  // 返回人体图
-  $(".last-btn").click(function () {
-    alert("返回");
-    $(".next-wapper").css({
-      "transform": "translateY(0)",
-      "transition": "transform 1s"
-    })
-    setTimeout(function () {
-      $(".body-pic").css({
-          "transform": "rotateY(0deg)",
-          "transition": "transform 1s"
-      })
-    },2000);
-    setTimeout(function () {
-      $(".beforehand-right").show();
-      $(".beforehand-left").show();
-      $(".body-symptom").css({
-          "transform": "rotateY(270deg)",
-          "transition": "transform 1s"
-      })
-    },1000)
-  })
+  //
+  // // 返回人体图
+  // $(".last-btn").click(function () {
+  //   alert("返回");
+  //   $(".next-wapper").css({
+  //     "transform": "translateY(0)",
+  //     "transition": "transform 1s"
+  //   })
+  //   setTimeout(function () {
+  //     $(".body-pic").css({
+  //         "transform": "rotateY(0deg)",
+  //         "transition": "transform 1s"
+  //     })
+  //   },2000);
+  //   setTimeout(function () {
+  //     $(".beforehand-right").show();
+  //     $(".beforehand-left").show();
+  //     $(".body-symptom").css({
+  //         "transform": "rotateY(270deg)",
+  //         "transition": "transform 1s"
+  //     })
+  //   },1000)
+  // })
 var percent = 20;
   // 预诊结果百分比
   if (percent<20) {
