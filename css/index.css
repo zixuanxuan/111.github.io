@@ -118,11 +118,11 @@ section {
   margin-left: 0.2rem;
   border-radius: 10px;
   overflow: hidden;
-  font-size: 0.14rem;
+  /*font-size: 0.12rem;*/
 }
 .beforehand-left li:nth-child(odd) span {
     display: inline-block;
-    width: 0.68rem;
+    width: 47%;
     height: 0.6rem;
     /*margin-top: -0.1rem;*/
     color: #36bac8;
