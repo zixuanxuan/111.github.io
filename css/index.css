@@ -118,7 +118,7 @@ section {
   margin-left: 0.2rem;
   border-radius: 10px;
   overflow: hidden;
-  font-size: 0.12rem;
+  font-size: 0.14rem;
 }
 .beforehand-left li:nth-child(odd) span {
     display: inline-block;
