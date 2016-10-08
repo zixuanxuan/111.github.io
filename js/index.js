@@ -39,7 +39,7 @@ $(function () {
         $(".beforehand-left").hide();
       },1000);
       setTimeout(function () {
-        // $(".body-pic").hide();
+        $(".body-pic").hide();
         $(".next-wapper").css({
           "transform": "translateY(-5rem)",
           "transition": "transform 1s"
