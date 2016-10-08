@@ -31,6 +31,10 @@ $(function () {
           "transition": "transform 1s"
       })
       setTimeout(function () {
+        $(".body-pic").hide();
+        $(".body-pic").css({
+            "transform": "rotateY(180deg)",
+        })
         $(".body-symptom").css({
             "transform": "rotateY(360deg)",
             "transition": "transform 1s"
@@ -40,7 +44,7 @@ $(function () {
       },1000);
       setTimeout(function () {
         $(".next-wapper").css({
-          "transform": "translateY(-5rem)",
+          "transform": "translateY(5rem)",
           "transition": "transform 1s"
         })
       },2000)
