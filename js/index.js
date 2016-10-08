@@ -1,5 +1,26 @@
 $(function () {
 
+
+  // 人体图切换
+  $(".man").click(function () {
+    $(".man").addClass("choose-active");
+    $(".woman").removeClass("choose-active")
+    $(".body img").attr("src","images/peopleMan@2x.png");
+  });
+  $(".woman").click(function () {
+    $(".man").removeClass("choose-active");
+    $(".woman").addClass("choose-active");
+    $(".body img").attr("src","images/peopleWoman@2x.png");
+  });
+  $(".acute").click(function () {
+    $(".acute").addClass("choose-active");
+    $(".chronic").removeClass("choose-active")
+  })
+  $(".chronic").click(function () {
+    $(".acute").removeClass("choose-active");
+    $(".chronic").addClass("choose-active");
+  });
+
   // 人体图旋转
   $(".body-img").click(function () {
       console.log($(this).attr("class"));
@@ -21,25 +42,7 @@ $(function () {
       },2000)
   })
 
-  // 人体图切换
-  $(".man").click(function () {
-    $(".man").addClass("choose-active");
-    $(".woman").removeClass("choose-active")
-    $(".body img").attr("src","images/peopleMan@2x.png");
-  });
-  $(".woman").click(function () {
-    $(".man").removeClass("choose-active");
-    $(".woman").addClass("choose-active");
-    $(".body img").attr("src","images/peopleWoman@2x.png");
-  });
-  $(".acute").click(function () {
-    $(".acute").addClass("choose-active");
-    $(".chronic").removeClass("choose-active")
-  })
-  $(".chronic").click(function () {
-    $(".acute").removeClass("choose-active");
-    $(".chronic").addClass("choose-active");
-  });
+
 
 
 
