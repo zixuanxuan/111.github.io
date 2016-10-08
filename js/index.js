@@ -33,15 +33,15 @@ $(function () {
       setTimeout(function () {
         $(".body-symptom").css({
             "transform": "rotateY(360deg)",
-            "transition": "transform 1s",
-            "z-index": "100"
+            "transition": "transform 1s"
         })
         $(".beforehand-right").hide();
+        $(".body-pic").hide();
         // $(".beforehand-left").hide();
       },1000);
       setTimeout(function () {
         $(".next-wapper").css({
-          "transform": "translateY(-5rem)",
+          // "transform": "translateY(-5rem)",
           "transition": "transform 1s"
         })
       },2000)
