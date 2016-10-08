@@ -6,7 +6,7 @@ $(function () {
     console.log("man");
     $(".body img").attr("src","images/peopleMan@2x.png");
     $(".man").addClass("choose-active");
-    $(".woman").removeClass("choose-active")
+    $(".woman").removeClass("choose-active");
   });
   $(".woman").click(function () {
     console.log("woman");
@@ -106,6 +106,7 @@ $(function () {
 
   // 返回人体图
   $(".last-btn").click(function () {
+    alert("返回");
     $(".next-wapper").css({
       "transform": "translateY(0)",
       "transition": "transform 1s"
