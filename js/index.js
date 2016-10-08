@@ -36,6 +36,7 @@ $(function () {
             "transition": "transform 1s"
         })
         $(".beforehand-right").hide();
+        $(".beforehand-left").hide();
       },1000);
       setTimeout(function () {
         // $(".body-pic").hide();
@@ -119,6 +120,7 @@ $(function () {
     },2000);
     setTimeout(function () {
       $(".beforehand-right").show();
+      $(".beforehand-left").show();
       $(".body-symptom").css({
           "transform": "rotateY(270deg)",
           "transition": "transform 1s"
