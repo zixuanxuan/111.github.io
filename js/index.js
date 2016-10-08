@@ -91,7 +91,7 @@ $(function () {
     if (count == 0) {
       alert("请选择症状")
     } else {
-       window.location.href="symptom.html";
+       window.location.href="result.html";
     }
   })
 
@@ -168,13 +168,4 @@ var percent = 20;
     $(".symptom-content-list li").removeClass("symptom-content-list-active");
     $(this).addClass("symptom-content-list-active");
   })
-
-
-
-
-
-
-
-
-
 })

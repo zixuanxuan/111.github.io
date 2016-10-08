@@ -2,7 +2,7 @@ body {
   font-size: 14px;
 }
 header {
-  width: 100%;
+  /*width: 100%;*/
   padding: 0.2rem;
   background: rgb(228, 245, 254);
 }
