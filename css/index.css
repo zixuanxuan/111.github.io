@@ -1,5 +1,6 @@
 body {
   font-size: 14px;
+  /*position: relative;*/
 }
 header {
   /*width: 100%;*/
@@ -204,7 +205,10 @@ section {
 }
 .next-wapper {
     padding: 0 0.2rem;
-    margin-top: 0.5rem;
+    /*margin-top: 0.5rem;*/
+    position: relative;
+    left: 0;
+    top: 2rem;
 }
 .next-btn {
     display: inline-block;
