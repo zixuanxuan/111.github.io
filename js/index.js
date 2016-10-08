@@ -35,10 +35,11 @@ $(function () {
             "transform": "rotateY(360deg)",
             "transition": "transform 1s"
         })
+        $(".body-pic").hide();
       },1000);
       setTimeout(function () {
         $(".next-wapper").css({
-          "transform": "translateY(-5rem)",
+          "transform": "translateY(5rem)",
           "transition": "transform 1s"
         })
       },2000)
