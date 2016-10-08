@@ -36,12 +36,11 @@ $(function () {
             "transition": "transform 1s"
         })
         $(".beforehand-right").hide();
-        $(".body-pic").hide();
         // $(".beforehand-left").hide();
       },1000);
       setTimeout(function () {
         $(".next-wapper").css({
-          // "transform": "translateY(-5rem)",
+          "transform": "translateY(-5rem)",
           "transition": "transform 1s"
         })
       },2000)

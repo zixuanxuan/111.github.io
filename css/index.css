@@ -222,9 +222,9 @@ section {
 }
 .body-symptom {
     /*background: hotpink;*/
-    position: relative;
-    /*left: 0;*/
-    /*top: 1.12rem;*/
+    position: absolute;
+    left: 0;
+    top: 1.12rem;
     /*z-index: -1;*/
     transform: rotateY(270deg);
     padding: 0.2rem;
