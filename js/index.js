@@ -1,4 +1,12 @@
 $(function () {
+  var swiper = new Swiper('.swiper-container', {
+          pagination: '.swiper-pagination',
+          effect: 'flip',
+          grabCursor: true,
+          nextButton: '.swiper-button-next',
+          prevButton: '.swiper-button-prev'
+      });
+
 
 
   // 人体图切换
@@ -23,29 +31,29 @@ $(function () {
     $(".chronic").addClass("choose-active");
   });
 
-  // 人体图旋转
-  $(".body-img").click(function () {
-      console.log($(this).attr("class"));
-      $(".body-pic").css({
-          "transform": "rotateY(90deg)",
-          "transition": "transform 1s"
-      })
-      setTimeout(function () {
-        // $(".body-pic").hide();
-        $(".body-symptom").css({
-            "transform": "rotateY(360deg)",
-            "transition": "transform 1s"
-        })
-        $(".beforehand-right").hide();
-        // $(".beforehand-left").hide();
-      },1000);
-      setTimeout(function () {
-        $(".next-wapper").css({
-          "transform": "translateY(-5rem)",
-          "transition": "transform 1s"
-        })
-      },2000)
-  })
+  // // 人体图旋转
+  // $(".body-img").click(function () {
+  //     console.log($(this).attr("class"));
+  //     $(".body-pic").css({
+  //         "transform": "rotateY(90deg)",
+  //         "transition": "transform 1s"
+  //     })
+  //     setTimeout(function () {
+  //       // $(".body-pic").hide();
+  //       $(".body-symptom").css({
+  //           "transform": "rotateY(360deg)",
+  //           "transition": "transform 1s"
+  //       })
+  //       $(".beforehand-right").hide();
+  //       // $(".beforehand-left").hide();
+  //     },1000);
+  //     setTimeout(function () {
+  //       $(".next-wapper").css({
+  //         "transform": "translateY(-5rem)",
+  //         "transition": "transform 1s"
+  //       })
+  //     },2000)
+  // })
 
 
 
