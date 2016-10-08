@@ -5,14 +5,14 @@ $(function () {
   $(".man").click(function () {
     console.log("man");
     $(".body img").attr("src","images/peopleMan@2x.png");
-    // $(".man").addClass("choose-active");
-    // $(".woman").removeClass("choose-active")
+    $(".man").addClass("choose-active");
+    $(".woman").removeClass("choose-active")
   });
   $(".woman").click(function () {
     console.log("woman");
     $(".body img").attr("src","images/peopleWoman@2x.png");
-    // $(".man").removeClass("choose-active");
-    // $(".woman").addClass("choose-active");
+    $(".man").removeClass("choose-active");
+    $(".woman").addClass("choose-active");
   });
   $(".acute").click(function () {
     $(".acute").addClass("choose-active");
@@ -24,25 +24,25 @@ $(function () {
   });
 
   // 人体图旋转
-  // $(".body-img").click(function () {
-  //     console.log($(this).attr("class"));
-  //     $(".body-pic").css({
-  //         "transform": "rotateY(90deg)",
-  //         "transition": "transform 1s"
-  //     })
-  //     setTimeout(function () {
-  //       $(".body-symptom").css({
-  //           "transform": "rotateY(360deg)",
-  //           "transition": "transform 1s"
-  //       })
-  //     },1000);
-  //     setTimeout(function () {
-  //       $(".next-wapper").css({
-  //         "transform": "translateY(-5rem)",
-  //         "transition": "transform 1s"
-  //       })
-  //     },2000)
-  // })
+  $(".body-img").click(function () {
+      console.log($(this).attr("class"));
+      $(".body-pic").css({
+          "transform": "rotateY(90deg)",
+          "transition": "transform 1s"
+      })
+      setTimeout(function () {
+        $(".body-symptom").css({
+            "transform": "rotateY(360deg)",
+            "transition": "transform 1s"
+        })
+      },1000);
+      setTimeout(function () {
+        $(".next-wapper").css({
+          "transform": "translateY(-5rem)",
+          "transition": "transform 1s"
+        })
+      },2000)
+  })
 
 
 
