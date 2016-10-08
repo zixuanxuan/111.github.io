@@ -5,14 +5,14 @@ $(function () {
   $(".man").click(function () {
     console.log("man");
     $(".body img").attr("src","images/peopleMan@2x.png");
-    $(".man").addClass("choose-active");
-    $(".woman").removeClass("choose-active")
+    // $(".man").addClass("choose-active");
+    // $(".woman").removeClass("choose-active")
   });
   $(".woman").click(function () {
     console.log("woman");
     $(".body img").attr("src","images/peopleWoman@2x.png");
-    $(".man").removeClass("choose-active");
-    $(".woman").addClass("choose-active");
+    // $(".man").removeClass("choose-active");
+    // $(".woman").addClass("choose-active");
   });
   $(".acute").click(function () {
     $(".acute").addClass("choose-active");
