@@ -13,111 +13,130 @@
         <link rel="stylesheet" href="css/reset.css" media="screen" title="no title">
         <link rel="stylesheet" href="css/index.css" media="screen" title="no title">
         <link rel="stylesheet" href="css/swiper-3.3.1.min.css" media="screen" title="no title">
-        <title>选择主要症状</title>
+        <title>基本信息及症状选择</title>
     </head>
     <body>
-        <header>
-            <input type="text" name="name" placeholder="输入症状查询,如咳嗽、发热、感冒、白细胞">
-            <span>帮助</span>
-        </header>
-
-        <!-- swiper -->
-        <div class="swiper-container">
-          <div class="swiper-wrapper">
-              <div class="swiper-slide">
-                <section class="body-pic">
-                  <div class="beforehand-left">
-                    <ul>
-                      <li>
-                        <span class="man choose choose-active">男</span>
-                        <span class="woman choose">女</span>
-                      </li>
-                      <li>年龄:<input class="age" type="number" placeholder="30">
-                      </li>
-                      <li>
-                        <span class="acute">急性</span>
-                        <span class="chronic choose-active">慢性</span>
-                      </li>
-                    </ul>
-                  </div>
-                  <div class="body-wapper">
-                      <div class="body">
-                        <img src="images/peopleMan@2x.png" alt="" />
-                        <div id="head" class="body-head body-img"></div>
-                        <div id="arms" class="body-arms body-img"></div>
-                        <div id="chest" class="body-chest body-img"></div>
-                        <div id="belly" class="body-belly  body-img"></div>
-                        <div id="perineum" class="body-perineum body-img"></div>
-                        <div id="body-all" class="body-body-all  body-img"></div>
-                        <div id="legs" class="body-legs body-img"></div>
-                      </div>
-                  </div>
-                  <div class="beforehand-right">
+        <div class="page-content">
+          <div class="top">
+              <p>输入如咳嗽、发热、白细胞↑症状查找</p>
+          </div>
+          <!-- 人体图 --><!-- swiper -->
+          <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <section class="body-pic">
+                    <div class="beforehand-left">
                       <ul>
-                        <li id="head1" class="body-img">
-                          <img src="images/toujing.png" alt="" />
-                          <p>头颈部</p>
+                        <li>
+                          <span class="man choose choose-active">男</span>
+                          <span class="woman choose">女</span>
                         </li>
-                        <li id="arms1" class="body-img">
-                          <img src="images/sizhi.png" alt="" />
-                          <p>四肢</p>
+                        <li>年龄:<input class="age" type="number" placeholder="30">
                         </li>
-                        <li id="chest1" class="body-img">
-                          <img src="images/xiongbu.png" alt="" />
-                          <p>胸部</p>
-                        </li>
-                        <li id="belly1" class="body-img">
-                          <img src="images/fubu.png" alt="" />
-                          <p>腹部</p>
-                        </li>
-                        <li id="perineum1" class="body-img">
-                          <img src="images/huiyinbu.png" alt="" />
-                          <p>会阴部</p>
-                        </li>
-                        <li id="body-all1" class="body-img">
-                          <img src="images/quanshen.png" alt="" />
-                          <p>全身</p>
+                        <li>
+                          <span class="acute">急性</span>
+                          <span class="chronic choose-active">慢性</span>
                         </li>
                       </ul>
-                  </div>
-                </section>
-              </div>
-              <div class="swiper-slide">
-                <section class="body-symptom">
-                  <div class="symptom-top">
-                      <span class="last-btn"><人体图</span>
-                      <img src="" alt="" />
-                      <span>全身</span>
-                  </div>
-                  <div class="symptomState">
-                      <span>肥胖</span>
-                      <span>体重减轻</span>
-                      <span>消瘦</span>
-                      <span>腰痛</span>
-                      <span>浮肿</span>
-                      <span>淋巴结肿</span>
-                      <span>畏寒</span>
-                      <span>休克</span>
-                      <span>肥胖</span>
-                      <span>体重减轻</span>
-                      <span>消瘦</span>
-                      <span>腰痛</span>
-                      <span>浮肿</span>
-                      <span>淋巴结肿</span>
-                      <span>畏寒</span>
-                      <span>休克</span>
-                  </div>
-                </section>
-              </div>
+                    </div>
+                    <div class="body-wapper">
+                        <div class="body">
+                          <img src="images/man@3x.png" alt="" />
+                          <div id="head" class="body-head body-img"></div>
+                          <div id="arms" class="body-arms body-img"></div>
+                          <div id="chest" class="body-chest body-img"></div>
+                          <div id="belly" class="body-belly  body-img"></div>
+                          <div id="perineum" class="body-perineum body-img"></div>
+                          <div id="body-all" class="body-body-all  body-img"></div>
+                          <div id="legs" class="body-legs body-img"></div>
+                        </div>
+                    </div>
+                    <div class="beforehand-right">
+                        <ul>
+                          <li id="head1" class="body-img">
+                            <img src="images/toujing.png" alt="" />
+                            <p>头颈部</p>
+                          </li>
+                          <li id="arms1" class="body-img">
+                            <img src="images/sizhi.png" alt="" />
+                            <p>四肢</p>
+                          </li>
+                          <li id="chest1" class="body-img">
+                            <img src="images/xiongbu.png" alt="" />
+                            <p>胸部</p>
+                          </li>
+                          <li id="belly1" class="body-img">
+                            <img src="images/fubu.png" alt="" />
+                            <p>腹部</p>
+                          </li>
+                          <li id="perineum1" class="body-img">
+                            <img src="images/huiyinbu.png" alt="" />
+                            <p>会阴部</p>
+                          </li>
+                          <li id="body-all1" class="body-img">
+                            <img src="images/quanshen.png" alt="" />
+                            <p>全身</p>
+                          </li>
+                        </ul>
+                    </div>
+                  </section>
+                </div>
+                <div class="swiper-slide">
+                  <section class="body-symptom">
+                    <div class="symptom-top">
+                        <ul>
+                          <li>头颈部</li>
+                          <li>四肢</li>
+                          <li>胸部</li>
+                          <li>腹部</li>
+                          <li>会阴部</li>
+                          <li>全身</li>
+                        </ul>
+                        <!-- <span class="last-btn"><人体图</span> -->
+                        <!-- <img src="" alt="" /> -->
+                        <!-- <span>全身</span> -->
+                    </div>
+                    <div class="symptomState">
+                        <span>肥胖</span>
+                        <span>体重减轻</span>
+                        <span>消瘦</span>
+                        <span>腰痛</span>
+                        <span>浮肿</span>
+                        <span>淋巴结肿</span>
+                        <span>畏寒</span>
+                        <span>休克</span>
+                        <span>肥胖</span>
+                        <span>体重减轻</span>
+                        <span>消瘦</span>
+                        <span>腰痛</span>
+                        <span>浮肿</span>
+                        <span>淋巴结肿</span>
+                        <span>畏寒</span>
+                        <span>休克</span>
+                    </div>
+                  </section>
+                </div>
+            </div>
           </div>
-    </div>
-        <div class="next-wapper">
-            <p class="symptom-choose">已选中<span>0</span>项</p>
-            <ul class="symptom">
-            </ul>
-            <p class="next">
-              <span class="next-btn">下一步</span>
-            </p>
+          <div class="next-wapper">
+              <p class="symptom-choose">已选中<span>0</span>项</p>
+              <ul class="symptom">
+              </ul>
+              <p class="next">
+                <span class="next-btn">下一步</span>
+              </p>
+          </div>
+        </div>
+        <div class="page-find" style="display:none">
+          <header>
+              <input class="search" type="search" name="name" placeholder="输入症状关键字查找">
+              <!-- <span>帮助</span> -->
+          </header>
+          <ul>
+            <li>发烧</li>
+            <li>感冒</li>
+          </ul>
+          <p>清空历史记录</p>
         </div>
     </body>
     <script src="js/swiper-3.3.1.jquery.min.js" charset="utf-8"></script>

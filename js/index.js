@@ -13,13 +13,13 @@ $(function () {
   // 人体图切换
   $(".man").click(function () {
     console.log("man");
-    $(".body img").attr("src","images/peopleMan@2x.png");
+    $(".body img").attr("src","images/man@2x.png");
     $(".man").addClass("choose-active");
     $(".woman").removeClass("choose-active");
   });
   $(".woman").click(function () {
     console.log("woman");
-    $(".body img").attr("src","images/peopleWoman@2x.png");
+    $(".body img").attr("src","images/woman@2x.png");
     $(".man").removeClass("choose-active");
     $(".woman").addClass("choose-active");
   });
@@ -50,6 +50,8 @@ $(function () {
         "transition": "transform 1s"
       })
   })
+
+
 
 
 
@@ -108,29 +110,6 @@ $(function () {
   })
 
 
-  //
-  // // 返回人体图
-  // $(".last-btn").click(function () {
-  //   alert("返回");
-  //   $(".next-wapper").css({
-  //     "transform": "translateY(0)",
-  //     "transition": "transform 1s"
-  //   })
-  //   setTimeout(function () {
-  //     $(".body-pic").css({
-  //         "transform": "rotateY(0deg)",
-  //         "transition": "transform 1s"
-  //     })
-  //   },2000);
-  //   setTimeout(function () {
-  //     $(".beforehand-right").show();
-  //     $(".beforehand-left").show();
-  //     $(".body-symptom").css({
-  //         "transform": "rotateY(270deg)",
-  //         "transition": "transform 1s"
-  //     })
-  //   },1000)
-  // })
 var percent = 20;
   // 预诊结果百分比
   if (percent<20) {
@@ -173,7 +152,6 @@ var percent = 20;
 
   })
 
-
   // 诊断列表
   $(".symptom-list ul li").click(function () {
       $(".symptom-list ul li").removeClass("symptomt-active");
@@ -183,4 +161,63 @@ var percent = 20;
     $(".symptom-content-list li").removeClass("symptom-content-list-active");
     $(this).addClass("symptom-content-list-active");
   })
+
+// 搜索症状
+// 切换
+$(".top p").click(function () {
+  $(".page-find").show();
+  $(".page-find").css({
+    "transform": "translateY(-8rem)",
+    "transition": "transform 2s"
+  })
+  setTimeout(function () {
+    $(".page-content").hide();
+  },2000)
+  // $(".page-find").slideDown("slow");
+})
+
+// cookie保存搜索记录
+var name = $(".search").val();
+console.log(name);
+function addCookie(name,value,expiresHours){
+    var cookieString=name+"="+escape(value);
+    //判断是否设置过期时间
+    if(expiresHours>0){
+        var date=new Date();
+        date.setTime(date.getTime+expiresHours*3600*1000);
+        cookieString=cookieString+"; expires="+date.toGMTString();
+    }
+    document.cookie=cookieString;
+}
+
+
+function getCookie(name) {
+  var strCookie=document.cookie;
+  var arrCookie=strCookie.split(";");
+  for (var i = 0; i < arrCookie.length; i++) {
+    var arr = arrCookie[i].split("=");
+    if (arr[0]==name) {
+        return arr[1];
+    }
+    return "";
+  }
+}
+getCookie();
+
+
+$(".symptom-top li").click(function () {
+  $(".symptom-top li").removeClass("symptom-top-active");
+  $(this).addClass("symptom-top-active");
+})
+
+
+
+
+
+
+
+
+
+
+
 })

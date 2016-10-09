@@ -7,6 +7,25 @@ header {
   padding: 0.2rem;
   background: rgb(228, 245, 254);
 }
+.page-find {
+  position: relative;
+  top: 8rem;
+  left: 0;
+}
+.top {
+  padding: 0.2rem;
+}
+.top p {
+  display: inline-block;
+  width: 5.8rem;
+  height: 0.7rem;
+  color: orange;
+  line-height: 0.7rem;
+  border: 1px solid orange;
+  border-radius: 4px;
+  text-align: center;
+  margin-left: 0.5rem;
+}
 header input {
     width: 5.8rem;
     height: 0.7rem;
@@ -236,7 +255,18 @@ section {
     border-radius: 8px;
 }
 .symptom-top {
-    margin: 0.3rem 0;
+    margin-bottom: 0.3rem;
+    margin-left: 0.2rem;
+}
+.symptom-top li {
+  display: inline-block;
+  margin-left: 0.25rem;
+  font-size: 0.3rem;
+  padding-bottom: 0.1rem;
+}
+.symptom-top-active {
+  border-bottom: 2px solid #36bac8;
+  color: #36bac8;
 }
 .symptomState span {
     padding: 0.1rem;
