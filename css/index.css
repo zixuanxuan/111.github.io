@@ -281,3 +281,19 @@ section {
     background: #36bac8;
     color: #fff !important;
 }
+
+
+
+
+/*搜索页面*/
+.search-list {
+  padding: 0 0.2rem;
+}
+.search-list li {
+  border-bottom: 1px solid #ccc;
+  line-height: 0.5rem;
+}
+.page-find p {
+  text-align: center;
+  margin-top: 0.2rem;
+}

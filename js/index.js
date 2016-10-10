@@ -175,30 +175,55 @@ $(".top p").click(function () {
   },2000)
   // $(".page-find").slideDown("slow");
 })
-var name ;
+
 // cookie保存搜索记录
+var cookie = {
+  getCookie:function (key) {
+    var cookie = document.cookie;
+    var arr = cookie.split("; ");
+    for (var i = 0; i < arr.length; i++) {
+      var arr2 = arr[1].split("=");
+      if (key == arr2[0]) {
+        console.log(arr2[0]);
+        return arr2[1];
+      }
+    }
+  },
+  setCookie:function (key,val,day) {
+    var date = new Date();
+    var nowData = date.getDate();
+    date.setDate(nowData + day);
+    document.cookie = key + "=" + val +"; expires=" + day;
+    }
+  }
+
+
+
+var name;
 $(".search").click(function () {
   name = $(".search-wapper").val();
-
-  var oDate = new Date();
-  oDate.setDate(oDate.getDate() + 30);
-  document.cookie = "b_name=" + name + ";expires=" + oDate;
+  cookie.setCookie(b_name,name,30);
+  // var oDate = new Date();
+  // // console.log(oDate);
+  // oDate.setDate(oDate.getDate() + 30);
+  // document.cookie = "b_name=" + name + ";expires=" + oDate;
 });
 $(".search-wapper").focus(function () {
-  var oCookie = document.cookie.split(';');
-  console.log(oCookie);
-  console.log(name);
-  for (var i = 0; i < oCookie.length; i++) {
-    var temp = oCookie[i].split('=');
-    console.log(temp[1]);
-    var list = $(".search-list li").html();
-    console.log(list);
-    if (temp[1] != list) {
-      $(".search-list").prepend($("<li>"+temp[1]+"</li>"));
-      // $("<li>"+temp[1]+"</li>").appendTo($(".search-list"));
-    }
+  cookie.getCookie(name);
+  // var oCookie = document.cookie.split(';');
+  // console.log(oCookie);
+  // console.log(name);
+  // for (var i = 0; i < oCookie.length; i++) {
+  //   var temp = oCookie[i].split('=');
+  //   console.log(temp[1]);
+  //   var list = $(".search-list li").html();
+  //   console.log(list);
+  //   if (temp[1] != list) {
+  //     $(".search-list").prepend($("<li>"+temp[1]+"</li>"));
+  //     // $("<li>"+temp[1]+"</li>").appendTo($(".search-list"));
+  //   }
 
-  }
+  // }
 
 })
 
