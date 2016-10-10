@@ -186,12 +186,14 @@ $(".search").click(function () {
 });
 $(".search-wapper").focus(function () {
   var oCookie = document.cookie.split(';');
-  // console.log(oCookie);
+  console.log(oCookie);
   console.log(name);
   for (var i = 0; i < oCookie.length; i++) {
     var temp = oCookie[i].split('=');
     console.log(temp[1]);
-    if (temp[1] != name) {
+    var list = $(".search-list li").html();
+    console.log(list);
+    if (temp[1] != list) {
       $(".search-list").prepend($("<li>"+temp[1]+"</li>"));
       // $("<li>"+temp[1]+"</li>").appendTo($(".search-list"));
     }
