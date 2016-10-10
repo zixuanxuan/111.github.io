@@ -179,19 +179,19 @@ $(".top p").click(function () {
 $(".search").click(function () {
   var name = $(".search-wapper").val();
   console.log(name);
-  var oDate = new Date();
-  oDate.setDate(oDate.getDate() + 30);
-  document.cookie = "b_name=" + name + ";expires=" + oDate;
+  // var oDate = new Date();
+  // oDate.setDate(oDate.getDate() + 30);
+  document.cookie = "b_name=" + name ;
 });
 $(".search-wapper").focus(function () {
-  var oCookie = document.cookie.split(';');
+  // var oCookie = document.cookie.split(';');
   // console.log(oCookie);
   for (var i = 0; i < oCookie.length; i++) {
     var temp = oCookie[i].split('=');
     console.log(temp);
     if (temp != name) {
-      $("<li>"+temp[1]+"</li>").appendTo($(".search-list"));
-    }    
+        $("<li>"+temp[1]+"</li>").appendTo($(".search-list"));
+    }
   }
 
 })
