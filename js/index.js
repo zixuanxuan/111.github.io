@@ -188,9 +188,10 @@ $(".search-wapper").focus(function () {
   // console.log(oCookie);
   for (var i = 0; i < oCookie.length; i++) {
     var temp = oCookie[i].split('=');
-    console.log(temp);
-    if (temp != name) {
-      $("<li>"+temp[1]+"</li>").appendTo($(".search-list"));
+    console.log(temp[1]);
+    if (temp[1] != name) {
+      $(".search-list").prepend($("<li>"+temp[1]+"</li>"));
+      // $("<li>"+temp[1]+"</li>").appendTo($(".search-list"));
     }
 
   }
