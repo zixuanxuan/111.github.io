@@ -183,7 +183,7 @@ $(".search").click(function () {
   oDate.setDate(oDate.getDate() + 30);
   document.cookie = "b_name=" + name + ";expires=" + oDate;
 });
-$(".search-wapper").click(function () {
+$(".search-wapper").focus(function () {
   var oCookie = document.cookie.split(';');
   console.log(oCookie);
   for (var i = 0; i < oCookie.length; i++) {
