@@ -182,7 +182,7 @@ var cookie = {
     var cookie = document.cookie;
     var arr = cookie.split("; ");
     for (var i = 0; i < arr.length; i++) {
-      var arr2 = arr[1].split('=');
+      var arr2 = arr[1].split('= ');
       if (key == arr2[0]) {
         console.log(arr2[0]);
         return arr2[1];
@@ -202,7 +202,7 @@ var cookie = {
 var name;
 $(".search").click(function () {
   name = $(".search-wapper").val();
-  cookie.setCookie(b_name,name,30);
+  cookie.setCookie(key,name,30);
   // var oDate = new Date();
   // // console.log(oDate);
   // oDate.setDate(oDate.getDate() + 30);
