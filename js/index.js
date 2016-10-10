@@ -182,9 +182,12 @@ $(".search").click(function () {
   oDate.setDate(oDate.getDate() + 30);
   document.cookie = "b_name=" + name + ";expires=" + oDate;
 });
-$(".search-wapper").focus(function () {
+$(".search-wapper").click(function () {
   var oCookie = document.cookie.split(';');
   console.log(oCookie);
+  for (var i = 0; i < oCookie.length; i++) {
+    $("<li>temp[1]</li>").appendTo($(".search-list"));
+  }
 
 })
 
