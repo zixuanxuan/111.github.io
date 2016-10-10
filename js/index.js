@@ -179,13 +179,13 @@ $(".top p").click(function () {
 $(".search").click(function () {
   var name = $(".search-wapper").val();
   console.log(name);
-  // var oDate = new Date();
-  // oDate.setDate(oDate.getDate() + 30);
-  document.cookie = "b_name=" + name ;
+  var oDate = new Date();
+  oDate.setDate(oDate.getDate() + 30);
+  document.cookie = "b_name=" + name + ";expires=" + oDate;
 });
 $(".search-wapper").focus(function () {
-  var oCookie = document.cookie;
-  console.log(oCookie);
+  var oCookie = document.cookie.split(';');
+  // console.log(oCookie);
   for (var i = 0; i < oCookie.length; i++) {
     var temp = oCookie[i].split('=');
     console.log(temp);
