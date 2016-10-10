@@ -199,10 +199,11 @@ var cookie = {
 
 
 
-var name;
+var key = b_name;
+var val;
 $(".search").click(function () {
-  name = $(".search-wapper").val();
-  cookie.setCookie(key,name,30);
+  val = $(".search-wapper").val();
+  cookie.setCookie(key,val,30);
   // var oDate = new Date();
   // // console.log(oDate);
   // oDate.setDate(oDate.getDate() + 30);
