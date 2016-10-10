@@ -190,7 +190,8 @@ $(".search-wapper").focus(function () {
     var temp = oCookie[i].split('=');
     console.log(temp);
     if (temp != name) {
-        $("<li>"+temp[1]+"</li>").prepend($(".search-list"));
+        $(".search-list").prepend($("<li>"+temp[1]+"</li>"))
+        // $("<li>"+temp[1]+"</li>").appendTo($(".search-list"));
     }
   }
 
