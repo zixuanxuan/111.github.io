@@ -177,7 +177,8 @@ $(".top p").click(function () {
 })
 // cookie保存搜索记录
 $(".search").click(function () {
-  var name = $(".search－wapper").val();
+  var name = $(".search-wapper").val();
+  console.log(name);
   var oDate = new Date();
   oDate.setDate(oDate.getDate() + 30);
   document.cookie = "b_name=" + name + ";expires=" + oDate;
