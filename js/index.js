@@ -199,7 +199,8 @@ var cookie = {
 
 
 
-var key = b_name;
+// var key = b_name;
+var key;
 var val;
 $(".search").click(function () {
   val = $(".search-wapper").val();
