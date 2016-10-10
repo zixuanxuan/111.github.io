@@ -175,9 +175,10 @@ $(".top p").click(function () {
   },2000)
   // $(".page-find").slideDown("slow");
 })
+var name ;
 // cookie保存搜索记录
 $(".search").click(function () {
-  var name = $(".search-wapper").val();
+  name = $(".search-wapper").val();
 
   var oDate = new Date();
   oDate.setDate(oDate.getDate() + 30);
