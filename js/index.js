@@ -184,8 +184,8 @@ $(".search").click(function () {
   document.cookie = "b_name=" + name ;
 });
 $(".search-wapper").focus(function () {
-  // var oCookie = document.cookie.split(';');
-  // console.log(oCookie);
+  var oCookie = document.cookie;
+  console.log(oCookie);
   for (var i = 0; i < oCookie.length; i++) {
     var temp = oCookie[i].split('=');
     console.log(temp);
