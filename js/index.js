@@ -177,55 +177,33 @@ $(".top p").click(function () {
 })
 
 // cookie保存搜索记录
-var cookie = {
-  getCookie:function (key) {
-    var cookie = document.cookie;
-    var arr = cookie.split("; ");
-    for (var i = 0; i < arr.length; i++) {
-      var arr2 = arr[1].split('= ');
-      if (key == arr2[0]) {
-        console.log(arr2[0]);
-        return arr2[1];
-      }
-    }
-  },
-  setCookie:function (key,val,day) {
-    var date = new Date();
-    var nowData = date.getDate();
-    date.setDate(nowData + day);
-    document.cookie = key + "=" + val +"; expires=" + day;
-    }
-  }
 
 
 
-// var key = b_name;
-var key;
-var val;
+
+var name;
 $(".search").click(function () {
-  val = $(".search-wapper").val();
-  cookie.setCookie(key,val,30);
-  // var oDate = new Date();
-  // // console.log(oDate);
-  // oDate.setDate(oDate.getDate() + 30);
-  // document.cookie = "b_name=" + name + ";expires=" + oDate;
+  name = $(".search-wapper").val();
+  var oDate = new Date();
+  // console.log(oDate);
+  oDate.setDate(oDate.getDate() + 30);
+  document.cookie = "b_name=" + name + ";expires=" + oDate;
 });
 $(".search-wapper").focus(function () {
-  cookie.getCookie(name);
-  // var oCookie = document.cookie.split(';');
-  // console.log(oCookie);
-  // console.log(name);
-  // for (var i = 0; i < oCookie.length; i++) {
-  //   var temp = oCookie[i].split('=');
-  //   console.log(temp[1]);
-  //   var list = $(".search-list li").html();
-  //   console.log(list);
-  //   if (temp[1] != list) {
-  //     $(".search-list").prepend($("<li>"+temp[1]+"</li>"));
-  //     // $("<li>"+temp[1]+"</li>").appendTo($(".search-list"));
-  //   }
+  var oCookie = document.cookie.split(';');
+  console.log(oCookie);
+  console.log(name);
+  for (var i = 0; i < oCookie.length; i++) {
+    var temp = oCookie[i].split('=');
+    console.log(temp[1]);
+    var list = $(".search-list li").html();
+    console.log(list);
+    if (temp[1] != list) {
+      $(".search-list").prepend($("<li>"+temp[1]+"</li>"));
+      // $("<li>"+temp[1]+"</li>").appendTo($(".search-list"));
+    }
 
-  // }
+  }
 
 })
 
