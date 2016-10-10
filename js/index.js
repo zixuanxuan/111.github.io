@@ -185,13 +185,13 @@ $(".search").click(function () {
 });
 $(".search-wapper").focus(function () {
   var oCookie = document.cookie.split(';');
-  // console.log(oCookie);
+  console.log(oCookie);
   for (var i = 0; i < oCookie.length; i++) {
     var temp = oCookie[i].split('=');
     console.log(temp);
     if (temp != name) {
-        // $(".search-list").prepend($("<li>"+temp[1]+"</li>"))
-        $("<li>"+temp[1]+"</li>").appendTo($(".search-list"));
+        $(".search-list").prepend($("<li>"+temp[1]+"</li>"))
+        // $("<li>"+temp[1]+"</li>").appendTo($(".search-list"));
     }
   }
 
