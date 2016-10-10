@@ -186,7 +186,8 @@ $(".search-wapper").click(function () {
   var oCookie = document.cookie.split(';');
   console.log(oCookie);
   for (var i = 0; i < oCookie.length; i++) {
-    $("<li>temp[1]</li>").appendTo($(".search-list"));
+    var temp = oCookie[i].splice('=');
+    $("<li>"+temp[1]+"</li>").appendTo($(".search-list"));
   }
 
 })
