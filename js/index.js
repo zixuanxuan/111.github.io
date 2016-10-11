@@ -7,9 +7,6 @@ $(function () {
           prevButton: '.last-btn'
       });
 
-
-
-
   // 人体图切换
   $(".man").click(function () {
     console.log("man");
@@ -31,16 +28,17 @@ $(function () {
     $(".acute").removeClass("choose-active");
     $(".chronic").addClass("choose-active");
   });
-
   // 人体图旋转
   // var symptomHeight = $(".body-symptom").height();
   // console.log(symptomHeight);
   $(".body-img").click(function () {
       console.log($(this).attr("id"));
+      var tra = $(".symptomState").height();
+      console.log(tra/100);
       setTimeout(function () {
         $(".next-wapper").css({
-            "transform": "translateY(-5rem)",
-            "transition": "transform 1s"
+            "top": (tra/100-3)+"rem",
+            "transition": "top 1s"
           })
       },500)
   })
@@ -50,13 +48,6 @@ $(function () {
         "transition": "transform 1s"
       })
   })
-
-
-
-
-
-
-
   // 疾病预诊选项卡
     var count = 0;  //选中项
     var text; //定义点击时的获取的症状
@@ -147,9 +138,7 @@ var percent = 20;
           $(".noagain").hide();
         },2000)
       }
-
       console.log($(this).html());
-
   })
 
   // 诊断列表
@@ -172,39 +161,28 @@ $(".top p").click(function () {
   })
   setTimeout(function () {
     $(".page-content").hide();
-  },2000)
+  },1000)
   // $(".page-find").slideDown("slow");
 })
 
 // cookie保存搜索记录
-
-
-
-
 var name;
 $(".search").click(function () {
   name = $(".search-wapper").val();
   var oDate = new Date();
-  // console.log(oDate);
   oDate.setDate(oDate.getDate() + 30);
   document.cookie = "b_name=" + name + ";expires=" + oDate;
 });
 $(".search-wapper").focus(function () {
   var oCookie = document.cookie.split(';');
-  console.log(oCookie);
-  console.log(name);
   for (var i = 0; i < oCookie.length; i++) {
     var temp = oCookie[i].split('=');
-    console.log(temp[1]);
     var list = $(".search-list li").html();
-    console.log(list);
     if (temp[1] != list) {
       $(".search-list").prepend($("<li>"+temp[1]+"</li>"));
       // $("<li>"+temp[1]+"</li>").appendTo($(".search-list"));
     }
-
   }
-
 })
 
 
