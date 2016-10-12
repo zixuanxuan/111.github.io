@@ -29,12 +29,28 @@ $(function () {
     $(".chronic").addClass("choose-active");
   });
   // 人体图旋转
-  // var symptomHeight = $(".body-symptom").height();
-  // console.log(symptomHeight);
+
+  var tra = $(".symptomState").height();  //获取所有症状的高度
+  console.log(tra/100);
   $(".body-img").click(function () {
       console.log($(this).attr("id"));
-      var tra = $(".symptomState").height();
-      console.log(tra/100);
+      var symptomId = $(this).attr("id");
+      //  根据获取的id值高亮显示部位
+      if (symptomId == "head" || symptomId == "head1") {
+          $(".symptom-top li").eq(0).addClass("symptom-top-active");
+      } else if (symptomId == "chest" || symptomId == "chest1") {
+          $(".symptom-top li").eq(2).addClass("symptom-top-active");
+      } else if (symptomId == "arms" || symptomId == "arms1" || symptomId == "legs" || symptomId == "legs1") {
+          $(".symptom-top li").eq(1).addClass("symptom-top-active");
+      } else if (symptomId == "belly" || symptomId == "belly") {
+          $(".symptom-top li").eq(3).addClass("symptom-top-active");
+      } else if (symptomId == "perineum" || symptomId == "perineum1") {
+          $(".symptom-top li").eq(4).addClass("symptom-top-active");
+      } else {
+        $(".symptom-top li").eq(5).addClass("symptom-top-active");
+      }
+
+
       setTimeout(function () {
         $(".next-wapper").css({
             "top": (tra/100-3.6)+"rem",
@@ -44,8 +60,8 @@ $(function () {
   })
   $(".last-btn").click(function () {
     $(".next-wapper").css({
-        "transform": "translateY(0rem)",
-        "transition": "transform 1s"
+      "top": 0,
+      "transition": "top 1s"
       })
   })
   // 疾病预诊选项卡
@@ -64,6 +80,7 @@ $(function () {
               }
             }
             return;
+
           } else {
             count++;
             $(".symptom-choose span").html(count);
@@ -73,7 +90,6 @@ $(function () {
             $(".symptom li").click(function () {
               var chooseSymptom = $(".symptomState span");
                 $(this).remove();
-
                 for (var i = 0; i < chooseSymptom.length; i++) {
                   if ($(this).children().html() == chooseSymptom.eq(i).html()) {
                       chooseSymptom.eq(i).removeClass("symptom-active")
@@ -87,6 +103,13 @@ $(function () {
           });
           }
   });
+
+
+
+
+
+
+
   $(".next-btn").click(function () {
     if (count == 0) {
       alert("请选择症状")
@@ -187,7 +210,6 @@ $(".search-wapper").focus(function () {
 
 // 点击可能患有的疾病进入疾病分析页面
     $(".page-result li").click(function () {
-
       $(".page-result li").css({
         "background": "#fff"
       });
