@@ -35,6 +35,7 @@ $(function () {
   $(".body-img").click(function () {
       console.log($(this).attr("id"));
       var symptomId = $(this).attr("id");
+      $(".symptom-top li").removeClass("symptom-top-active");
       //  根据获取的id值高亮显示部位
       if (symptomId == "head" || symptomId == "head1") {
           $(".symptom-top li").eq(0).addClass("symptom-top-active");
@@ -49,8 +50,6 @@ $(function () {
       } else {
         $(".symptom-top li").eq(5).addClass("symptom-top-active");
       }
-
-
       setTimeout(function () {
         $(".next-wapper").css({
             "top": (tra/100-3.6)+"rem",
@@ -64,6 +63,15 @@ $(function () {
       "transition": "top 1s"
       })
   })
+
+  $(".symptom-top li").click(function () {
+    $(".symptom-top li").removeClass("symptom-top-active");
+    $(this).addClass("symptom-top-active");
+  })
+
+
+
+
   // 疾病预诊选项卡
     var count = 0;  //选中项
     var text; //定义点击时的获取的症状
@@ -80,7 +88,6 @@ $(function () {
               }
             }
             return;
-
           } else {
             count++;
             $(".symptom-choose span").html(count);
@@ -103,12 +110,6 @@ $(function () {
           });
           }
   });
-
-
-
-
-
-
 
   $(".next-btn").click(function () {
     if (count == 0) {
@@ -203,10 +204,7 @@ $(".search-wapper").focus(function () {
   }
 })
 
-    $(".symptom-top li").click(function () {
-      $(".symptom-top li").removeClass("symptom-top-active");
-      $(this).addClass("symptom-top-active");
-    })
+
 
 // 点击可能患有的疾病进入疾病分析页面
     $(".page-result li").click(function () {
@@ -220,8 +218,6 @@ $(".search-wapper").focus(function () {
         $(".page-symptom").show();
         $(".page-result").hide();
       },1000)
-
-
     })
 // 点击返回可能患有的疾病页面
     $(".symptom-top img").click(function () {
