@@ -187,8 +187,18 @@ $(".search-wapper").focus(function () {
 
 // 点击可能患有的疾病进入疾病分析页面
     $(".page-result li").click(function () {
-      $(".page-symptom").show();
-      $(".page-result").hide();
+
+      $(".page-result li").css({
+        "background": "#fff"
+      });
+      $(this).css({
+        "background": "#ccc"
+      });
+      setTimeout(function () {
+        $(".page-symptom").show();
+        $(".page-result").hide();
+      },1000)
+
 
     })
 // 点击返回可能患有的疾病页面

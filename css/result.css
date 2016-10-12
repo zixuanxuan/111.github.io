@@ -9,21 +9,26 @@ header {
   text-align: center;
 }
 .main {
-    width: 6.4rem;
+    width: 7.45rem;
+    /*border: 1px solid red;*/
     position: absolute;
     left: 0;
     top: 1rem;
     background: #fff;
-    padding: 0.6rem;
     line-height: 0.8rem;
     border-radius: 4rem 4rem 0 0/ 0.5rem 0.5rem 0 0;
+    overflow: hidden;
+    padding-top: 0.5rem;
+    padding-bottom: 1.2rem;
 }
-.main li:nth-last-child(2) {
+.main li:nth-last-child(1) {
     border-bottom: 0;
 }
 .main li {
     border-bottom: 0.5px solid #ccc;
     position: relative;
+    /*width: 100%;*/
+    padding: 0 0.2rem;
 }
 
 .main li img {
