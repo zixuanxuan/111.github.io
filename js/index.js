@@ -37,7 +37,7 @@ $(function () {
       console.log(tra/100);
       setTimeout(function () {
         $(".next-wapper").css({
-            "top": (tra/100-3)+"rem",
+            "top": (tra/100-3.6)+"rem",
             "transition": "top 1s"
           })
       },500)
@@ -183,6 +183,18 @@ $(".search-wapper").focus(function () {
     $(".symptom-top li").click(function () {
       $(".symptom-top li").removeClass("symptom-top-active");
       $(this).addClass("symptom-top-active");
+    })
+
+// 点击可能患有的疾病进入疾病分析页面
+    $(".page-result li").click(function () {
+      $(".page-symptom").show();
+      $(".page-result").hide();
+
+    })
+// 点击返回可能患有的疾病页面
+    $(".symptom-top img").click(function () {
+      $(".page-symptom").hide();
+      $(".page-result").show();
     })
 
 })

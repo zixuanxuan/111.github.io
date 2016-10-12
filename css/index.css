@@ -227,7 +227,8 @@ section {
     /*margin-top: 0.5rem;*/
     position: relative;
     left: 0;
-    top: 2rem;
+    top: 0;
+    /*top: 1rem;*/
 }
 .next-btn {
     display: inline-block;
