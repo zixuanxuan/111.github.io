@@ -86,51 +86,51 @@ section {
     position: relative;
 }
 .body-head {
-    width: 1.3rem;
-    height: 1.45rem;
+    width: 1.1rem;
+    height: 1.3rem;
     border: 1px solid #000;
     position: absolute;
-    left: 0.54rem;
+    left: 0.64rem;
     top: 0;
 }
 .body-chest {
-    width: 1.3rem;
-    height: 1rem;
+    width: 1.1rem;
+    height: 0.8rem;
     border: 1px solid #000;
     position: absolute;
-    top: 1.45rem;
-    left: 0.54rem;
+    top: 1.3rem;
+    left: 0.64rem;
 }
 .body-belly {
-    width: 1.3rem;
-    height: 1rem;
+    width: 1.1rem;
+    height: 0.9rem;
     border: 1px solid #000;
     position: absolute;
-    top: 2.45rem;
-    left: 0.56rem;
+    top: 2.1rem;
+    left: 0.66rem;
 }
 .body-perineum {
     width: 1.3rem;
     height: 0.9rem;
     border: 1px solid #000;
     position: absolute;
-    top: 3.45rem;
+    top: 3rem;
     left: 0.56rem;
 }
 .body-arms {
     width: 2.43rem;
-    height: 3.3rem;
+    height: 2.6rem;
     border: 1px solid green;
     position: absolute;
     left: 0;
-    top: 1.45rem;
+    top: 1.3rem;
 }
 .body-legs {
-    width: 1.3rem;
-    height: 3.5rem;
+    width: 1.8rem;
+    height: 2.8rem;
     position: absolute;
-    top: 4.35rem;
-    left: 0.56rem;
+    top: 3.9rem;
+    left: 0.38rem;
     border: 1px solid green;
 }
 .body img {

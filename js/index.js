@@ -10,13 +10,13 @@ $(function () {
   // 人体图切换
   $(".man").click(function () {
     console.log("man");
-    $(".body img").attr("src","images/man@2x.png");
+    $(".body img").attr("src","images/peopleMan@2x.png");
     $(".man").addClass("choose-active");
     $(".woman").removeClass("choose-active");
   });
   $(".woman").click(function () {
     console.log("woman");
-    $(".body img").attr("src","images/woman@2x.png");
+    $(".body img").attr("src","images/peopleWoman@2x.png");
     $(".man").removeClass("choose-active");
     $(".woman").addClass("choose-active");
   });
@@ -86,12 +86,7 @@ $(function () {
               $(".symptom-choose span").html(count);
           });
           }
-
   });
-
-
-
-
   $(".next-btn").click(function () {
     if (count == 0) {
       alert("请选择症状")
@@ -185,21 +180,9 @@ $(".search-wapper").focus(function () {
   }
 })
 
-
-
-$(".symptom-top li").click(function () {
-  $(".symptom-top li").removeClass("symptom-top-active");
-  $(this).addClass("symptom-top-active");
-})
-
-
-
-
-
-
-
-
-
-
+    $(".symptom-top li").click(function () {
+      $(".symptom-top li").removeClass("symptom-top-active");
+      $(this).addClass("symptom-top-active");
+    })
 
 })

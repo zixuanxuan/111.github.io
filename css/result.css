@@ -148,7 +148,8 @@ footer span {
     /*border: 1px solid red;*/
     background: #f1f1f1;
     /*position: fixed;*/
-    padding: 0.2rem 1rem;
+    margin-top: 0.2rem;
+    padding: 0.3rem 1rem;
     /*left: 1.2rem;*/
     /*top: 0.9rem;*/
     /*margin-left: 1.2rem;*/
